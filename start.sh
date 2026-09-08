@@ -10,8 +10,13 @@ MAXPLAYERS="${MAXPLAYERS:-8}"
 DIFFICULTY="${DIFFICULTY:-0}"
 PASSWORD="${PASSWORD:-}"
 
+mkdir -p /terraria/worlds
+
+WORLD="/terraria/worlds/${WORLDNAME}.wld"
+
 ARGS=(
     -port "$PORT"
+    -world "$WORLD"
     -autocreate 2
     -worldname "$WORLDNAME"
     -maxplayers "$MAXPLAYERS"

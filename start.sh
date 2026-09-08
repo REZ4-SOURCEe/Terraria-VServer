@@ -12,6 +12,7 @@ PASSWORD="${PASSWORD:-}"
 
 ARGS=(
     -port "$PORT"
+    -autocreate 2
     -worldname "$WORLDNAME"
     -maxplayers "$MAXPLAYERS"
     -difficulty "$DIFFICULTY"
